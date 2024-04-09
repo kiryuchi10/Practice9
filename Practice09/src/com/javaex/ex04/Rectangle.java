@@ -15,30 +15,31 @@ public class Rectangle extends Shape implements Resizeable {
 		return width;
 	}
 
-	public void setWidth(double width) {
-		this.width = width;
-	}
+//	public void setWidth(double width) {
+//		this.width = width;
+//	}
 
 	public double getHeight() {
 		return height;
 	}
 
-	public void setHeight(double height) {
-		this.height = height;
+//	public void setHeight(double height) {
+//		this.height = height;
+//	}
+	@Override
+	public void resize(double s) {
+		width*=s;
+		height*=s;
 	}
 	public double getPerimeter() {
 		return 2*(height+width);
-	}
-	@Override
-	public void resize(double s) {
-		// TODO Auto-generated method stub
-		width=s*width;
-		height=s*height;
-		
-	}
+	}	
+	
 	public double getArea() {
-		return height*width;
+		return width*height;
 	}
+	
+	
 
 	
 }

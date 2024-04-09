@@ -25,7 +25,7 @@ public class RectTriangle extends Shape{
 		return height+width+Math.sqrt(Math.pow(height,2)+Math.pow(width,2));
 	}
 	public double getArea() {
-		return 1/2*height*width;
+		return (0.5*height*width);
 	}
 
 }
